@@ -1,0 +1,25 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'spec_guardian'
+
+# Parse command line arguments
+if ARGV.empty? || ARGV[0] == '--help' || ARGV[0] == '-h'
+  puts 'Usage: spec_guardian PATH_TO_FILE'
+  puts 'Generates a test file for the given source file using AI.'
+  exit 0
+end
+
+begin
+  # Initialize Rails environment
+  require File.expand_path('config/environment', Dir.pwd)
+
+  # Generate the test
+  SpecGuardian.generate_test(ARGV[0])
+rescue LoadError => e
+  puts 'Error: This command must be run from a Rails application root directory.'
+  exit 1
+rescue SpecGuardian::Error => e
+  puts "Error: #{e.message}"
+  exit 1
+end

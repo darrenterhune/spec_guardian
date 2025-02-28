@@ -1,0 +1,27 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": true,
+  "jsxSingleQuote": false,
+  "trailingComma": "all",
+  "bracketSpacing": true,
+  "bracketSameLine": false,
+  "arrowParens": "avoid",
+  "printWidth": 120,
+  "rubyPlugins": "plugin/trailing_comma",
+  "overrides": [
+    {
+      "files": ["babel.config.js"],
+      "options": {
+        "trailingComma": "es5"
+      }
+    },
+    {
+      "files": ["*.css", "*.scss"],
+      "options": {
+        "singleQuote": false
+      }
+    }
+  ]
+}

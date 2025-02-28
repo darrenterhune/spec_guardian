@@ -1,0 +1,21 @@
+# Overwrite or add rules to create your own house style
+#
+# # Use `[a, [b, c]]` not `[ a, [ b, c ] ]`
+# Layout/SpaceInsideArrayLiteralBrackets:
+#   Enabled: false
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: single_quotes
+Style/TrailingCommaInHashLiteral:
+  Enabled: true
+  EnforcedStyle: no_comma
+Style/EmptyMethod:
+  Enabled: true
+  EnforcedStyle: expanded
+Style/Documentation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: true
+  Max: 25
