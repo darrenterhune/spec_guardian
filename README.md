@@ -37,7 +37,7 @@ end
 
 NOTE: The `max_tokens` determines the length of the response. If you are seeing files cut off, then you need to increase this value.
 
-Ensure you have your Anthropic API key set as an environment variable or directly in the configuration.
+Ensure you have your Anthropic API key set as an environment variable or directly in the configuration. You can signup here https://console.anthropic.com to generate an account and get an API key.
 
 ## Usage
 
@@ -48,6 +48,8 @@ You can use the executable to generate a test for any file in your Rails applica
 ```ruby
 bundle exec spec_guardian app/models/user.rb
 ```
+
+During testing, models files with around 200-300 lines of code cost around $0.02. This will vary of course depending on how complex your code is. If you have rubocop installed you may need to adjust specs. It also isn't 100% accurate with generating perfect code so expect to look over the files it generates and be ready to fix things.
 
 ### Rake Task
 
@@ -83,5 +85,5 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/darren
 
 ## License
 
-PrivateGem is proprietary software. Usage requires a paid subscription.
+PrivateGem is proprietary software. It is not open to public yet.
 See LICENSE.txt for terms. Unauthorized use is prohibited.
