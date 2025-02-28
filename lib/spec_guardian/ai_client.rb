@@ -1,5 +1,4 @@
 require 'anthropic'
-require 'pry'
 
 module SpecGuardian
   class AiClient
