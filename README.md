@@ -24,7 +24,7 @@ gem install spec_guardian
 
 ## Configuration
 
-Create an initializer file at `config/initializers/spec_guardian.rb`:
+Create an initializer file at `config/initializers/spec_guardian.rb` by running the install command to create this file `rails g spec_guardian:install`
 
 ```ruby
 SpecGuardian.configure do |config|
@@ -82,8 +82,3 @@ bundle exec rake spec_guardian:generate['app/models/user.rb']
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/darrenterhune/spec_guardian.
-
-## License
-
-PrivateGem is proprietary software. It is not open to public yet.
-See LICENSE.txt for terms. Unauthorized use is prohibited.

@@ -29,6 +29,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'anthropic', '~> 0.3.2' # For Claude API calls
   spec.add_dependency 'rails', '>= 6.0'
   spec.add_dependency 'rake', '>= 12.0'
+  spec.add_dependency 'thor', '>= 1.2'
   spec.add_development_dependency 'pry', '~> 0.15.2'
   spec.add_development_dependency 'rspec', '~> 3.0'
   spec.add_development_dependency 'rubocop', '~> 1.73', '>= 1.73.1'
