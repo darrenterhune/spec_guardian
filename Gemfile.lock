@@ -1,8 +1,8 @@
 PATH
   remote: .
   specs:
-    spec_guardian (0.1.0)
-      anthropic (~> 0.3.2)
+    spec_guardian (0.1.2)
+      anthropic (>= 0.3.2)
       rails (>= 6.0)
       rake (>= 12.0)
       thor (>= 1.2)
